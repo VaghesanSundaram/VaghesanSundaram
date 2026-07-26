@@ -1,5 +1,3 @@
-# Hi, I'm Vaghesan Sundaram
-
 I am a Computer Science and Mathematics student at the University of Maryland, College Park, with an ACES Cybersecurity minor and CompTIA Security+.
 
 I build Python systems across security engineering and backend software. My current work covers application security, authorization, authentication, vulnerability analysis, developer tooling, and reproducible evaluation.
