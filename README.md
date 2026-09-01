@@ -6,12 +6,12 @@ I build Python systems across security engineering and backend software. My curr
 
 ### [Agent Least Privilege](https://github.com/VaghesanSundaram/agent-least-privilege)
 
-A default-deny authorization monitor for tool-using agents. It binds calls to task-scoped functions, resources, arguments, approvals, and call limits, with append-only audit events and deterministic replay.
+A local Python authorization gateway for filesystem tools exposed through the Model Context Protocol (MCP). An agent connects through the proxy, which checks a trusted launch-time policy before forwarding each tool call.
 
-- 93 automated tests with Hypothesis property checks
-- Strict mypy and Ruff checks on Windows and Linux
-- 60-episode synthetic evaluation across three permission models
-- 0/10 unauthorized state-changing effects under task-conditioned enforcement, compared with 4/10 unrestricted and 6/10 with a static action allowlist
+- Enforces allowed paths, exact arguments, and per-tool call quotas
+- Serializes quota reservations and records redacted audit events for completed, denied, timed-out, and unknown outcomes
+- Unit and actual proxy-to-server integration tests with strict mypy/Ruff and Windows/Linux CI
+- In an [earlier synthetic feasibility run](https://github.com/VaghesanSundaram/agent-least-privilege/blob/main/docs/evaluation.md), prevented filesystem effects from all 12 unauthorized proposals while 10/12 executed attack tasks and 24/24 executed controls completed
 
 ### [CTI Claim Provenance](https://github.com/VaghesanSundaram/cti-claim-provenance)
 
