@@ -20,7 +20,7 @@ A 64-question, point-in-time cyber threat intelligence benchmark across 24 depen
 - Privacy-safe 192-cell result projection
 - Offline verifier for corpus, split, documentation, privacy, and aggregate checks
 - Evidence binding increased from 83.3% to 86.5% under constrained output
-- Exact-answer matching decreased from 33.3% to 26.0%, showing that structured output did not solve temporal answer construction
+- Exact-answer matching decreased from 33.3% to 26.0%; a 144-response follow-up also found no material benefit from question-specific schemas
 
 ### [Static SAST Triage Agent Benchmark](https://github.com/VaghesanSundaram/sast-alert-triage-benchmark)
 
