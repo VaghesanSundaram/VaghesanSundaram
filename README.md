@@ -4,6 +4,15 @@ I build Python systems across security engineering and backend software. My curr
 
 ## Selected work
 
+### [AI Pentest Prompt Injection](https://github.com/VaghesanSundaram/llm-pentest-injection)
+
+A controlled study of how an AI pentesting agent handles instructions embedded in target-owned content, using Python runners and disposable Docker labs with synthetic credentials and proof markers.
+
+- Ran 288 GLM-5.3 trials across an initial 15-scenario study and a 198-trial follow-up with clean controls
+- In the follow-up's proof and credential transfer tests, observed 18/18 transfers with embedded checklists, 11/18 with procedural wording, and 3/18 with overt instructions; none of nine clean controls transferred either
+- Published trial-level results and linked evidence excerpts, separating legitimate task completion from requested deviations
+- Results describe one model and synthetic setup; the receipt service was inside the allowed network and the prompt had no explicit injection warning. Reviews have not been independently adjudicated by a human
+
 ### [Agent Least Privilege](https://github.com/VaghesanSundaram/agent-least-privilege)
 
 A local Python authorization gateway for filesystem tools exposed through the Model Context Protocol (MCP). An agent connects through the proxy, which checks a trusted launch-time policy before forwarding each tool call.
